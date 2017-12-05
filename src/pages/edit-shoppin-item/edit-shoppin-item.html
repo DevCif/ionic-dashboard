@@ -1,0 +1,49 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Editar</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label floating>Marca</ion-label>
+    <ion-input type="" [(ngModel)]="shoppingItem.Name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Modelo</ion-label>
+    <ion-input type="" [(ngModel)]="shoppingItem.Number"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Kilometraje</ion-label>
+    <ion-input type="" [(ngModel)]="shoppingItem.KilometrajeUso"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Kilometraje Uso</ion-label>
+    <ion-input type="" [(ngModel)]="shoppingItem.Modelo"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label><h3>Fecha servicio</h3></ion-label>
+      <ion-input type="date" [(ngModel)]="shoppingItem.FechaServicio"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Servicio</ion-label>
+        <ion-select [(ngModel)]="shoppingItem.Servicio">
+          <ion-option value="mayor">mayor</ion-option>
+          <ion-option value="menor">menor</ion-option>
+        </ion-select>
+      </ion-item>
+  
+  <button ion-button block (click)="editShoppingItem(shoppingItem)">
+      Guardar Cambios
+  </button>
+
+
+</ion-content>

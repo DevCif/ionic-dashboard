@@ -1,0 +1,60 @@
+<!--
+  Generated template for the AddShoppingPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Agregar</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="card-background-page">
+
+  <ion-item>
+    <ion-label floating>Marca</ion-label>
+    <ion-input type="text" [(ngModel)]="shoppingItem.itemName"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Codigo Carro</ion-label>
+    <ion-input type="text" [(ngModel)]="shoppingItem.itemNumber"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Kilometraje</ion-label>
+    <ion-input type="text" [(ngModel)]="shoppingItem.itemKilometraje"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Kilometraje Restante</ion-label>
+    <ion-input type="text" [(ngModel)]="shoppingItem.itemKilometrajeUso"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label><h3>Fecha servicio</h3></ion-label>
+      <ion-input type="date" [(ngModel)]="shoppingItem.itemFechaServicio"></ion-input>
+    </ion-item>
+
+  <ion-item>
+    <ion-label floating>Modelo</ion-label>
+    <ion-input type="number" [(ngModel)]="shoppingItem.itemModelo"></ion-input>
+  </ion-item>
+
+
+  <ion-item>
+      <ion-label>Servicio</ion-label>
+      <ion-select [(ngModel)]="shoppingItem.itemServicio">
+        <ion-option value="mayor">mayor</ion-option>
+        <ion-option value="menor">menor</ion-option>
+      </ion-select>
+    </ion-item>
+
+  <button ion-button block (click)="addShoppinItem(shoppingItem)">Agregar</button>
+
+
+</ion-content>
