@@ -7,5 +7,6 @@ export interface ShoppingItem{
     itemModelo: string;
     itemFechaServicio:string;
     itemServicio: string;
+    itemVidaUtil: string;
 
 }

@@ -45,6 +45,10 @@
     <ion-input type="number" [(ngModel)]="shoppingItem.itemModelo"></ion-input>
   </ion-item>
 
+  <ion-item>
+    <ion-label><h3>Vida Util</h3></ion-label>
+    <ion-input type="text" [(ngModel)]="shoppingItem.itemVidaUtil"></ion-input>
+  </ion-item>
 
   <ion-item>
       <ion-label>Servicio</ion-label>
@@ -53,6 +57,8 @@
         <ion-option value="menor">menor</ion-option>
       </ion-select>
     </ion-item>
+
+  
 
   <button ion-button block (click)="addShoppinItem(shoppingItem)">Agregar</button>
 

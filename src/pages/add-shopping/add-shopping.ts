@@ -44,6 +44,7 @@ export class AddShoppingPage {
       FechaServicio: this.shoppingItem.itemFechaServicio,
       Servicio : this.shoppingItem.itemServicio,
       Modelo : this.shoppingItem.itemModelo,
+      VidaUtil: this.shoppingItem.itemVidaUtil
 
     
     });
